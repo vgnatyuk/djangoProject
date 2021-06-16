@@ -6,7 +6,7 @@ class ModelsTest(TestCase):
     def test_testmodel_create(self):
         counter = TestModel.objects.all().count()
         TestModel.objects.create(name='test_name', apartment_id=10)
-        self.assertEqual(TestModel.objects.all().count(), counter + 2)
+        self.assertEqual(TestModel.objects.all().count(), counter + 3)
 
     def test_anothermodel_create(self):
         counter = AnotherModel.objects.all().count()
