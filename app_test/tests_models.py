@@ -1,5 +1,5 @@
 from django.test import TestCase
-from ..models import TestModel, AnotherModel
+from app_test.models import TestModel, AnotherModel
 
 class ModelsTest(TestCase):
     def test_testmodel_create(self):
